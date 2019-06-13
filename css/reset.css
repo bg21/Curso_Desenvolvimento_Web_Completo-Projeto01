@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif; }
+
+html, body {
+  height: 100%; }
+
+img {
+  width: 100%; }

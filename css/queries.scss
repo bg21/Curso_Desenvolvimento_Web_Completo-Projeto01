@@ -1,0 +1,44 @@
+
+@media screen and (max-width: 768px){
+    div.desktop{
+        display: none;
+    }
+    div.mobile{
+        display: block;
+    }
+    section.sobre{
+        padding: 40px 0;
+    }
+    section.sobre div.descricao{
+        width: 100%;
+        margin: 10px 0;
+    }
+    section.sobre div.perfil{
+        width: 50%;
+        margin: 0 auto;
+    }
+    section.diferenciais{
+        padding: 0;
+    }
+    section.diferenciais div.single{
+        width: 50%;
+        text-align: center;
+    }
+    section.extras{
+        padding: 0;
+        text-align: center;
+    }
+    section.extras div.depoimentos{
+        width: 100%;
+    }
+    section.extras div.servicos{
+        width: 100%;
+        margin: 60px 0;
+    }
+}
+
+@media screen and (max-width: 520px){
+    section.diferenciais div.single{
+        width: 100%;
+    }
+}

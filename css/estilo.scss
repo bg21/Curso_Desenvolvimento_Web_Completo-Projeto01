@@ -1,0 +1,252 @@
+@import 'reset';
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header{
+    padding: 20px 0;
+    background-color: #232222;
+}
+div.logo a{
+    color: #f2f2f2;
+    font-size: 22px;
+    font-weight: bold;
+}
+div.desktop >.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.desktop nav ul{
+    display: flex;
+}
+div.desktop nav ul li{
+    padding: 0 10px;
+}
+div.desktop nav ul li a{
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+div.mobile{
+    display: none;
+}
+div.mobile >.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.mobile h2 i{
+    color: #f2f2f2;
+    cursor: pointer;
+}
+div.mobile nav ul{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display: none;
+}
+div.mobile nav ul li{
+    background-color: #232222;
+    padding: 20px 0;
+    text-align: center;
+}
+div.mobile nav ul li a{
+    color: #f2f2f2;
+}
+
+section.bg{
+    background-image: url('../imgs/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 600px;
+    padding: 40px;
+    position: relative;
+}
+section.bg div.overlay{
+    width: 100%;
+    min-height: 600px;
+    background-color: rgba(35, 34, 34, 0.5);
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+section.bg div.content{
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 500px;
+}
+section.bg div.content h2{
+    text-align: center;
+    font-size: 34px;
+}
+section.bg form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: center;
+    width: 100%;
+}
+section.bg form input{
+    height: 55px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+section.bg form input[type=email]{
+    width: 100%;
+    color: #333;
+    font-size: 16px;
+}
+section.bg form input[type=submit]{
+    background-color: #ef3510;
+    cursor: pointer;
+    color: #f2f2f2;
+    font-size: 17px;
+    width: 100%;
+}
+section.bg form input[type=submit]:hover{
+    background-color: #333;
+}
+section.bg div.content h2{
+    color: #f2f2f2;
+}
+
+section.sobre{
+    padding: 40px;
+}
+section.sobre >.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section.sobre div.descricao{
+    width: 60%;
+    padding: 0 40px;
+    color: #333;
+}
+section.sobre div.descricao h2{
+    font-size: 28px;
+    font-weight: normal;
+    color: #50545b;
+}
+section.sobre div.descricao p{
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #676d77;
+}
+section.sobre div.perfil{
+    width: 40%;
+}
+
+
+
+
+section.diferenciais{
+    padding: 40px;
+    background-color: #e2e2e2;
+}
+section.diferenciais h2{
+    text-align: center;
+    color: #50545b;
+    font-size: 30px;
+    font-weight: normal;
+}
+section.diferenciais >.container{
+    display: flex;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+section.diferenciais div.single{
+    width: 33.3%;
+    padding: 0 40px;
+    margin: 60px 0;
+}
+section.diferenciais div.single h1{
+    font-size: 50px;
+    text-align: center;
+    color: #50545b;
+}
+section.diferenciais div.single h2{
+    text-align: center;
+    color: #50545b;
+}
+section.diferenciais div.single p{
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #676d77;
+}
+
+
+section.extras{
+    padding: 40px;
+    background-color: #484588;
+}
+section.extras >.container{
+    display: flex;
+    //align-items: center;
+    flex-wrap: wrap;
+}
+section.extras div.depoimentos{
+    width: 50%;
+    padding: 0 30px;
+}
+section.extras div.depoimentos h2{
+    color: #f2f2f2;
+    font-weight: normal;
+    font-size: 30px;
+}
+section.extras div.depoimentos h4{
+    color: #f2f2f2;
+    margin: 5px 0;
+}
+section.extras div.depoimentos p{
+    color: #f2f2f2;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+section.extras div.servicos{
+    width: 50%;
+    padding: 0 30px;
+}
+section.extras div.servicos h2{
+    color: #f2f2f2;
+    font-weight: normal;
+    font-size: 30px;
+}
+section.extras div.servicos ul li{
+    color: #f2f2f2;
+    font-weight: lighter;
+    margin: 15px 0;
+}
+
+footer{
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+@import 'queries';
